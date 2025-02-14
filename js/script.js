@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (movies && movies.length > 0) {
         movies.forEach(movie => {
           const col = document.createElement("div");
-          col.className = "col-md-4";
+          col.className = "col-md-4 p-2";
           const card = document.createElement("div");
           card.className = "card movie-card";
           

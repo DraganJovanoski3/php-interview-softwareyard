@@ -8,13 +8,19 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-  <div class="container my-4">
-    <h1 class="text-center mb-4">Movie Search App</h1>
-    <div class="row mb-3">
+  <header class="py-3">
+    <div class="container d-flex justify-content-around align-items-center">
+      <a href="index.html"><img src="logo.png" alt="Movie Search App Logo" class="logo me-3" /></a>
+      <h3 class="app-title m-0 ">Find Your Next Favorite Film in Seconds!</h3>
+    </div>
+  </header>
+
+  <div class="container my-4 rounded">
+    <div class="row mb-4">
       <div class="col-md-8">
         <div class="input-group">
-          <input type="text" id="searchInput" class="form-control" placeholder="Search for a movie..." />
-          <button id="searchBtn" class="btn btn-primary">Search</button>
+          <input type="text" id="searchInput" class="form-control border border-light" placeholder="Search for a movie..." />
+          <button id="searchBtn" class="btn btn-light">Search</button>
         </div>
       </div>
       <div class="col-md-2">
@@ -25,12 +31,14 @@
         </select>
       </div>
       <div class="col-md-2 text-end">
-        <button id="favoritesBtn" class="btn btn-warning">Favorites</button>
+        <button id="favoritesBtn" class="btn btn-warning text-light">Favorites</button>
       </div>
     </div>
+
     <div id="moviesContainer" class="row"></div>
+
     <div class="row mt-3">
-      <div class="col text-center">
+      <div class="col text-center text-light">
         <button id="prevBtn" class="btn btn-secondary me-2">Previous</button>
         <span id="pageInfo"></span>
         <button id="nextBtn" class="btn btn-secondary ms-2">Next</button>
@@ -40,13 +48,12 @@
 
   <div class="modal fade" id="movieModal" tabindex="-1" aria-labelledby="movieModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+      <div class="modal-content modal-dark">
         <div class="modal-header">
           <h5 class="modal-title" id="movieModalLabel">Movie Details</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body" id="modalContent">
-        </div>
+        <div class="modal-body text-light" id="modalContent"></div>
       </div>
     </div>
   </div>

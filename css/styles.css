@@ -1,36 +1,112 @@
 body {
-    background-color: #f8f9fa;
+    background-color: #222 !important;
+    color: #464646;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
   }
   
+  header {
+    background-color: #222;
+    border-bottom: 1px solid #444;
+  }
+  .logo {
+    width: 400px;
+    height: auto;
+  }
+  .app-title {
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .container {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .input-group .form-control {
+    background-color: #333;
+    border: 1px solid #555;
+    color: #fff;
+  }
+  .input-group .form-control::placeholder {
+    color: #bbb;
+  }
+  .btn-primary {
+    background-color: #444;
+    border: none;
+  }
+  .btn-primary:hover {
+    background-color: #555;
+  }
+  .btn-warning {
+    background-color: #666;
+    border: none;
+  }
+  .btn-warning:hover {
+    background-color: #777;
+  }
   .movie-card {
     margin-bottom: 20px;
     cursor: pointer;
     transition: transform 0.3s ease;
+    background-color: #333;
+    border: none;
+    color: #fff;
     position: relative;
+    overflow: hidden;
+    height: 250px;
   }
-  
   .movie-card:hover {
     transform: scale(1.05);
   }
-  
   .movie-card img {
     width: 100%;
     height: auto;
+    display: block;
+    object-fit: cover;
   }
-  
+  .movie-card .card-body {
+    flex: 1;
+    padding: 15px;
+    overflow: hidden;
+  }
   .favorite-btn {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     border: none;
     border-radius: 50%;
     padding: 5px 8px;
     cursor: pointer;
     font-size: 18px;
+    color: #333;
+    width: 40px;
+    height: auto;
   }
   .favorite-btn.active {
-    color: rgb(236, 80, 114);
+    color: red;
+  }
+  
+  .btn-secondary {
+    background-color: #444;
+    border: none;
+  }
+  .btn-secondary:hover {
+    background-color: #555;
+  }
+  
+  .modal-dark {
+    background-color: #222;
+    color: #fff;
+  }
+  .modal-dark .modal-header,
+  .modal-dark .modal-body {
+    background-color: #222;
+  }
+  .modal-dark .modal-title {
+    color: #fff;
   }
   
